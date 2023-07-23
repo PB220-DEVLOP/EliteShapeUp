@@ -1,15 +1,44 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
 body{
 margin-top:0;
 padding:0;
 align-items:center;
 background:#112c38;
+font-family: 'Playfair Display', serif;
 }
-.search:hover{
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+.fadeInAnimation {
+    animation: fadeIn 4S forwards;
+  }
+  
+  /* Add any additional CSS styling here */
+  .search:hover{
     background-color:  #ffc107;;
 }
 .noticication-bar{
     width: 100%;
     background-color: black;
     color: #fff;
-}
+} 
+  h1 {
+    text-align: center;
+    color:white;
+    margin-top: 20px;
+  }
+  
+  p {
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 800px;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #fff;
+  }
+   
