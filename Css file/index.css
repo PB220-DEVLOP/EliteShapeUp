@@ -1,0 +1,15 @@
+
+body{
+margin-top:0;
+padding:0;
+align-items:center;
+background:#112c38;
+}
+.search:hover{
+    background-color:  #ffc107;;
+}
+.noticication-bar{
+    width: 100%;
+    background-color: black;
+    color: #fff;
+}
