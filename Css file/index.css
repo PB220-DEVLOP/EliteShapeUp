@@ -19,14 +19,7 @@ font-family: 'Playfair Display', serif;
   }
   
   /* Add any additional CSS styling here */
-  .search:hover{
-    background-color:  #ffc107;;
-}
-.noticication-bar{
-    width: 100%;
-    background-color: black;
-    color: #fff;
-} 
+ 
   h1 {
     text-align: center;
     color:white;
