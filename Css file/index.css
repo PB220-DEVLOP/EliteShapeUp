@@ -3,7 +3,7 @@ body{
 margin-top:0;
 padding:0;
 align-items:center;
-background:#112c38;
+
 font-family: 'Playfair Display', serif;
 }
 @keyframes fadeIn {
@@ -35,3 +35,115 @@ font-family: 'Playfair Display', serif;
     color: #fff;
   }
    
+
+/* Card Css */
+.card{
+    position: relative;
+    background-color: #333;
+    transition: 0.5s;
+}
+.card:hover{
+    height: 500px;
+    margin: 20px;
+}
+.card .lines{
+    position: absolute;
+    inset: 0;
+    background: black;
+    overflow: hidden;
+}
+.card .lines::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 120px;
+    background: linear-gradient(transparent, #45f3ff,#45f3ff,#45f3ff,transparent);
+    animation: animate 5s linear infinite;
+    animation-play-state:paused ;
+}
+.card:hover .lines::before{
+    animation-play-state: running;
+}
+@keyframes animate {
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.card .lines::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background-color: #292929;
+}
+.weightloss{
+position: absolute;
+top: -60px;
+left: 50%;
+transform: translateX(-50%);
+transition: 0.5s;
+z-index: 10;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.card:hover .weightloss{
+    top: 25px;
+}
+.card .weightloss{
+
+    inset: 1;
+}
+.card .weightloss::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 220px;
+    height: 100px;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(transparent, #ff3c7b,#ff3c7b,#ff3c7b,transparent);
+    animation: animate2 6s linear infinite;
+    animation-play-state: paused;
+}
+.card:hover .weightloss::before{
+    animation-play-state: running;
+}
+@keyframes animate2 {
+    0%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+}
+.card .weightloss::after{
+    content: '';
+    position: absolute;
+    inset:3px;
+   background:#292929;
+}
+.card .weightloss img{
+    z-index: 1;
+    transition: 0.5s;
+}
+.card:hover .details{
+    z-index: 1;
+    padding: 30px;
+    margin-top: 220px;
+}
+.details h2{
+    color: #45f3ff;
+}
+
+@media(max-width:500px){
+  .card:hover{
+    height: 530px;
+    margin: 20px;
+}
+}
