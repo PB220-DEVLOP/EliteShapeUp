@@ -42,7 +42,7 @@ font-family: 'Playfair Display', serif;
     transition: 0.5s;
 }
 .card:hover{
-    height: 500px;
+
     margin: 20px;
 }
 .card .lines{
@@ -141,14 +141,4 @@ align-items: center;
 }
 h4{
   margin-bottom: 60px;
-}
-
-@media(max-width:500px){
-  .card:hover{
-    height: 530px;
-    margin: 20px;
-}
-}
-.footer{
-  background-color: white;
 }
